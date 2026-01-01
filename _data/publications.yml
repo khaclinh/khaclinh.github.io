@@ -1,0 +1,21 @@
+# Edit this list. Keep URLs full (https://...).
+# You can add links like: Paper, Code, Project, Slides, Video.
+- title: "A Robust Domain-Generalized Detector via X"
+  authors: "Your Name, Coauthor A, Coauthor B"
+  venue: "CVPR"
+  year: 2026
+  selected: true
+  links:
+    - label: "Paper"
+      url: "https://example.com/paper"
+    - label: "Code"
+      url: "https://github.com/yourname/yourrepo"
+
+- title: "Physics-Guided Frequency Augmentation for Detection"
+  authors: "Your Name, Coauthor C"
+  venue: "WACV"
+  year: 2025
+  selected: false
+  links:
+    - label: "Paper"
+      url: "https://example.com/paper2"

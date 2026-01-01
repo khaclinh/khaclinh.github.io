@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <div class="title"><a href="{{ '/' | relative_url }}" style="color:inherit; text-decoration:none;">{{ site.title }}</a></div>
+      <div class="tagline">{{ site.tagline }}</div>
+    </div>
+
+    <nav class="nav">
+      {% assign current = page.nav | default: page.title | downcase %}
+      <a class="{% if current == 'updates' or page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}">Updates</a>
+      <a class="{% if current == 'about' %}active{% endif %}" href="{{ '/about/' | relative_url }}">About</a>
+      <a class="{% if current == 'publications' %}active{% endif %}" href="{{ '/publications/' | relative_url }}">Publications</a>
+      <a class="{% if current == 'stories' %}active{% endif %}" href="{{ '/stories/' | relative_url }}">Stories</a>
+      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+    </nav>
+  </div>
+</header>

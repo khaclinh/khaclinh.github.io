@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="card">
+  <div class="meta" style="color:var(--muted); font-size:0.92rem;">
+    {% if page.date %}{{ page.date | date: "%B %-d, %Y" }}{% endif %}
+    {% if page.venue %} · {{ page.venue }}{% endif %}
+  </div>
+  <h1 style="margin:8px 0 6px; letter-spacing:-0.02em;">{{ page.title }}</h1>
+  {% if page.subtitle %}
+    <p style="margin:0 0 10px; color:var(--muted);">{{ page.subtitle }}</p>
+  {% endif %}
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>
